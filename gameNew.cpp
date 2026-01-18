@@ -3,19 +3,19 @@
 #include <cstdlib>
 #include <ctime>
 
-// Käytetään luokan nimeä GameNew
+
 GameNew::GameNew(int max) {
     maxNumber = max;
-    // Satunnaisluvun alustus perinteisellä tavalla
+    
     srand(time(0));
     randomNumber = rand() % maxNumber + 1;
     
-    // Nollataan laskuri varmuuden vuoksi
+    
     numOfGuesses = 0;
 }
 
 GameNew::~GameNew() {
-    // Tyhjä purkaja riittää tässä
+
 }
 
 void GameNew::play() {
